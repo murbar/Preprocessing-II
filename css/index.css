@@ -303,6 +303,7 @@ nav ul li a {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
@@ -333,5 +334,65 @@ nav ul li a {
     padding: 1.2rem;
     font-size: 1.8rem;
     border-radius: 1.5rem;
+  }
+}
+.home .contact-form {
+  border-top: 2px dashed #C0C0C0;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.home .contact-form > div {
+  width: 50%;
+}
+.home .contact-form .cta {
+  padding-right: 50px;
+}
+.home .contact-form .cta p {
+  font-size: 2em;
+}
+.home .contact-form .form-row {
+  margin-bottom: 20px;
+}
+.home .contact-form .form-row label {
+  display: block;
+  font-family: 'Indie Flower', cursive;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.home .contact-form .form-row input,
+.home .contact-form .form-row select,
+.home .contact-form .form-row textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px dashed #C0C0C0;
+  font-size: 1.6rem;
+  border-radius: 1.5rem;
+}
+.home .contact-form .form-row select {
+  height: 4rem;
+}
+.home .contact-form .form-row button {
+  background: #17A2B8;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 1.5rem;
+}
+@media (max-width: 500px) {
+  .home .contact-form {
+    display: block;
+    padding: 30px 0;
+  }
+  .home .contact-form > div {
+    width: 100%;
+  }
+  .home .contact-form .cta {
+    padding: 0;
+  }
+  .home .contact-form .cta p {
+    font-size: initial;
   }
 }
