@@ -21,3 +21,26 @@ nav {
         }
     }
 }
+@media @mobile {
+    nav {
+        .container {
+            flex-direction: column;
+            padding: 20px 20px 5px;
+        }
+        .logotype h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            li {
+                display: block;
+                a {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
