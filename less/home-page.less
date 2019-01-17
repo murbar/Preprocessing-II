@@ -17,8 +17,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -30,6 +28,26 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+  
+    @media @mobile {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      .text-content, .img-content {
+        width: 100%;
+        padding-left: 0;
+      }
+      .img-content img {
+        width: 100%;
+      }
+      &.inverse-content {
+        div {
+          padding-right: 0;
+        }
+        .img-content {
+          order: 1;
+        }
       }
     }
   }
@@ -56,19 +74,32 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
-    justify-content: space-between;
-
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
       .btn {
         .fun-btn(82%);
+      }
+    }
+    
+    @media @mobile {
+      flex-direction: column;
+      .destination {
+        width: 75%;
+        margin: 0 auto 30px;
+        .btn {
+          .fun-btn(100%);
+        }
       }
     }
   }
