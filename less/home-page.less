@@ -141,7 +141,18 @@
         .fun-btn(100%);
       }
     }
+    @media @mobile {
+      display: block;
+      padding: 30px 0;
+      > div {
+        width: 100%;
+      }
+      .cta {
+        padding: 0;
+        p {
+          font-size: initial;
+        }
+      }
+    }
   }
-
-
 }// home
